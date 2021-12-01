@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Bebas Neue Book';
+  src: url(./fonts/bebasneue-book-webfont.woff2);
+}
+
+:root {
+  --clr-grey: #585858;
+  --clr-red: #900a0a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: 1px solid limegreen;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Bebas Neue Book';
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+.timer-container {
+  display: grid;
+  place-items: center;
+  height: 50%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 5px solid var(--clr-red);
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+}
+
+.time {
+  font-size: 196px;
+}
+
+.btn {
+  background-color: transparent;
+}
