@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'Bebas Neue Book';
+  src: url(bebasneue-book-webfont.0ae8d723.woff2);
+}
+
+:root {
+  --clr-grey: #585858;
+  --clr-red: #900a0a;
+  --clr-green: #09a65a;
+
+  --var-time-passed: 75%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* outline: 1px solid limegreen; */
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Bebas Neue Book';
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: #2b2a30;
+}
+
+.timer-container {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  padding: 4rem;
+  border: none;
+  background: radial-gradient(72% 72% at 51.7% 28.6%, #3a393f 0%, #17171a 100%);
+  box-shadow: inset 0px 0px 114px rgba(0, 0, 0, 0.45);
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.time {
+  font-size: 150px;
+}
+
+.btn-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  width: max-content;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.start {
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.outer {
+  background: conic-gradient(
+    var(--clr-red) var(--var-time-passed),
+    black var(--var-time-passed) 100%
+  );
+  padding: 5px;
+  box-shadow: -5px 14px 44px #000000, 5px -16px 50px rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+}
+
+.settings-input {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.65);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.settings-input.show {
+  display: grid;
+  place-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings {
+  display: flex;
+  justify-content: center;
+}
+
+.settings svg {
+  fill: #585858;
+}
+
+/*# sourceMappingURL=index.d6a22517.css.map */

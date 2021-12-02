@@ -1,0 +1,25 @@
+{
+  "name": "pomodoro-timer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barryhanna/pomodoro-timer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barryhanna/pomodoro-timer/issues"
+  },
+  "homepage": "https://github.com/barryhanna/pomodoro-timer#readme",
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  }
+}
