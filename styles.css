@@ -141,6 +141,14 @@ body {
 form {
   display: flex;
   flex-direction: column;
+  color: white;
+  padding: 1rem;
+  background-color: #17171a;
+  border-radius: 5px;
+}
+
+form > * {
+  width: max-content;
 }
 
 .settings {
