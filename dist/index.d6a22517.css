@@ -8,6 +8,7 @@
   --clr-red: #900a0a;
   --clr-green: #09a65a;
 
+  --clr-circle: var(--clr-red);
   --var-time-passed: 0%;
 }
 
@@ -114,7 +115,7 @@ body {
 
 .outer {
   background: conic-gradient(
-    var(--clr-red) var(--var-time-passed),
+    var(--clr-circle) var(--var-time-passed),
     black var(--var-time-passed) 100%
   );
   padding: 5px;

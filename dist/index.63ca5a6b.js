@@ -19,11 +19,25 @@ function setTime(time) {
 }
 function update() {
     timeRemaining += -1;
+    if (timeRemaining <= 0) {
+        stopTimer();
+        timeOver();
+        setTime(`${totalTime / 60}:00`);
+        return;
+    }
     setTime(formatTime(timeRemaining));
     updateCircle();
 }
+function timeOver() {
+    root.style.setProperty('--clr-circle', 'var(--clr-green)');
+    root.style.setProperty('--var-time-passed', '100%');
+    startBtn.innerHTML = '<img src="./images/check.svg" />';
+}
 function updateCircle() {
     const percentDone = timeRemaining / totalTime * 100;
+    setCircle(percentDone);
+}
+function setCircle(percentDone) {
     root.style.setProperty('--var-time-passed', `${percentDone}%`);
 }
 function formatTime(timeInSeconds) {
