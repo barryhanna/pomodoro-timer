@@ -8,7 +8,7 @@
   --clr-red: #900a0a;
   --clr-green: #09a65a;
 
-  --var-time-passed: 75%;
+  --var-time-passed: 0%;
 }
 
 *,
@@ -106,8 +106,8 @@ body {
 }
 
 .start {
-  letter-spacing: 0.3em;
-  text-indent: 0.3em;
+  letter-spacing: 0.3rem;
+  text-indent: 0.3rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -149,6 +149,14 @@ form {
 
 form > * {
   width: max-content;
+}
+
+form > * + * {
+  margin-top: 1rem;
+}
+
+form input {
+  font-size: 2rem;
 }
 
 .settings {
