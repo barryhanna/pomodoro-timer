@@ -37,7 +37,7 @@ function update() {
 function timeOver() {
   root.style.setProperty('--clr-circle', 'var(--clr-green)');
   root.style.setProperty('--var-time-passed', '100%');
-  startBtn.innerHTML = '<img src="./images/check.svg" />';
+  startBtn.innerHTML = '<img src="/images/check.svg" />';
 }
 
 function updateCircle() {
