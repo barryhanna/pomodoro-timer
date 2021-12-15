@@ -85,10 +85,12 @@ body {
   display: flex;
   flex-direction: column;
   color: white;
+  justify-content: center;
 }
 
 .time {
   font-size: 150px;
+  width: 100%;
 }
 
 .btn-panel {
@@ -96,6 +98,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .btn {
@@ -117,7 +120,14 @@ body {
   margin-bottom: 1rem;
 }
 
+.btn-timer-completed-icon {
+  display: none;
+  margin: 0 auto;
+}
+
 .outer {
+  width: 400px;
+  aspect-ratio: 1;
   background: conic-gradient(
     var(--clr-circle) var(--var-time-passed),
     black var(--var-time-passed) 100%

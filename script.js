@@ -6,6 +6,10 @@ const settingsForm = document.getElementById('settings-form');
 const time = document.getElementById('time');
 const okSettingsBtn = document.getElementById('ok-btn');
 const timeInput = document.getElementById('timeInput');
+const startBtnText = document.getElementsByClassName('btn-text')[0];
+const btnTimerCompletedIcon = document.getElementsByClassName(
+  'btn-timer-completed-icon'
+)[0];
 
 let totalTime = 15 * 60;
 let timeRemaining = totalTime;
@@ -37,7 +41,8 @@ function update() {
 function timeOver() {
   root.style.setProperty('--clr-circle', 'var(--clr-green)');
   root.style.setProperty('--var-time-passed', '100%');
-  startBtn.innerHTML = '<img src="/images/check.svg" />';
+  startBtnText.style.display = 'none';
+  btnTimerCompletedIcon.style.display = 'block';
 }
 
 function updateCircle() {
