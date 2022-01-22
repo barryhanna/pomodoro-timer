@@ -93,6 +93,10 @@ body {
   width: 100%;
 }
 
+.time span {
+  font-variant-numeric: tabular-nums;
+}
+
 .btn-panel {
   display: flex;
   flex-direction: column;
